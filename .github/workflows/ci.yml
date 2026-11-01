@@ -72,7 +72,9 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
 
       - name: Check the tag matches the version
-        run: test "v$(./gradlew -q properties --property version --no-daemon | sed -n 's/^version: //p')" = "${GITHUB_REF_NAME}"
+        run: |
+          version=$(./gradlew -q properties --property version --no-daemon | sed -n 's/^version: //p')
+          test "v${version}" = "${GITHUB_REF_NAME}"
 
       - name: Publish
         env:
