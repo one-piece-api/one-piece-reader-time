@@ -8,7 +8,10 @@ package dev.onepieceapi.readertime;
  */
 final class ReferenceCases {
 
-	/** Ace first appears in chapter 154 (anime episode to verify). */
+	/**
+	 * Ace first appears in chapter 154. The anime episode is left out: sources disagree
+	 * between 91 and 94 (checked 2026-11-01).
+	 */
 	static final Point ACE_FIRST_APPEARANCE = Point.ofChapter(154);
 
 	/** Ace dies at Marineford: chapter 574, episode 483. */
@@ -29,8 +32,11 @@ final class ReferenceCases {
 	/** Usopp duels Luffy and leaves the crew at Water 7: chapter 332, episode 236. */
 	static final Point WATER_7_USOPP_LEAVES = Point.of(332, 236);
 
-	/** Usopp rejoins after Enies Lobby: chapter 438 (anime episode to verify). */
-	static final Point USOPP_REJOINS = Point.ofChapter(438);
+	/**
+	 * Usopp rejoins after Enies Lobby: chapter 438, episode 323 (Wikipedia, One Piece
+	 * season 9, checked 2026-11-01).
+	 */
+	static final Point USOPP_REJOINS = Point.of(438, 323);
 
 	/** Usopp first appears in chapter 23, episode 9. */
 	static final Point USOPP_FIRST_APPEARANCE = Point.of(23, 9);
